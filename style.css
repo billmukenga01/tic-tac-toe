@@ -7,7 +7,7 @@ header{
     border-bottom: 1px solid black;
 }
 button{
-    
+
 }
 .heading{
     width: fit-content;
@@ -22,11 +22,24 @@ button{
     margin: 0 auto;
     max-width: 500px;
     height: calc(40vh + 200px);
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
 .box{
-    border: 1px solid balck;
+    border: 1px solid black;
+}
+
+.one, .two, .three{
+    border-top: none;
+}
+.seven, .eight, .nine{
+    border-bottom: none;
+}
+.one, .four, .seven{
+    border-left: none;
+}
+.three, .six, .nine{
+    border-right: none;
 }
