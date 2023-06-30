@@ -3,25 +3,37 @@
     font-size: 10px;
 }
 header{
-    background-color: blue;
+    /* background-color: blue; */
     border-bottom: 1px solid black;
 }
-button{
-
+.displayController{
+    width: fit-content;
+    height: 5vh;
+    font-size:3rem ;
+    margin: 0 auto;
+}
+.button{
+    margin: 0 auto;
+    width: fit-content;
+    padding: 1em;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 .heading{
     width: fit-content;
     margin: 0 auto;
-    padding: calc(.05em + 3.5vh);
-    font-size: 3em;
+    padding: calc(.005em + 3.5vh);
+    font-size: 4em;
 }
 .wrapper{
-    margin: 2em 0;
+    margin-top: 2em;
+    margin-bottom: 6em;
 }
 .gameboard{
     margin: 0 auto;
-    max-width: 500px;
-    height: calc(40vh + 200px);
+    width: calc(30vw + 150px);
+    height: calc(35vh + 150px);
     /* border: 1px solid black; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
