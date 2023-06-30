@@ -1,0 +1,32 @@
+:root{
+    box-sizing: border-box;
+    font-size: 10px;
+}
+header{
+    background-color: blue;
+    border-bottom: 1px solid black;
+}
+button{
+    
+}
+.heading{
+    width: fit-content;
+    margin: 0 auto;
+    padding: calc(.05em + 3.5vh);
+    font-size: 3em;
+}
+.wrapper{
+    margin: 2em 0;
+}
+.gameboard{
+    margin: 0 auto;
+    max-width: 500px;
+    height: calc(40vh + 200px);
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.box{
+    border: 1px solid balck;
+}
