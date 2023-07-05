@@ -33,6 +33,33 @@ const GameBoard = (()=>{
 
 // GameBoard.render();
 
-const GameController = ()=>{
-    return{}
-}
+
+
+const player = (name, mark)=>{
+    return{
+        name,
+        mark
+    }
+};
+
+const GameController = (()=>{
+    let players = [];
+    let currentPlayerIndex;
+    let gameOver;
+
+    const start = ()=>{
+        players.push(player('PlayerOne', 'X'));
+        players.push(player('PlayerTwo', 'O'));
+
+        currentPlayerIndex = 0;
+        gameOver = false
+        GameBoard.render();
+    }
+
+    return{
+        start,
+        // restart
+    }
+})();
+
+GameController.start()
