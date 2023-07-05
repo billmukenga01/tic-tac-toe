@@ -1,0 +1,67 @@
+:root{
+    box-sizing: border-box;
+    font-size: 10px;
+}
+header{
+    /* background-color: ghostwhite; */
+    /* border-bottom: 1px solid black; */
+    box-shadow: 0 8px 8px -4px grey;
+}
+body{
+    /* background-color: gold; */
+}
+.displayController{
+    width: fit-content;
+    height: 5vh;
+    font-size:3rem ;
+    margin: 0 auto;
+}
+.button{
+    margin: 0 auto;
+    width: fit-content;
+    padding: 1em;
+    font-size: 1.5rem;
+    border: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 250ms ease-in;
+}
+.button:hover{
+    color: #fff;
+    background-color: black;
+}
+.heading{
+    width: fit-content;
+    margin: 0 auto;
+    padding: calc(.005em + 3.5vh);
+    font-size: 4em;
+}
+.wrapper{
+    margin-top: 2em;
+    margin-bottom: 6em;
+}
+.gameboard{
+    margin: 0 auto;
+    width: calc(30vw + 150px);
+    height: calc(35vh + 150px);
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.box{
+    border: 1px solid black;
+}
+
+.one, .two, .three{
+    border-top: none;
+}
+.seven, .eight, .nine{
+    border-bottom: none;
+}
+.one, .four, .seven{
+    border-left: none;
+}
+.three, .six, .nine{
+    border-right: none;
+}
