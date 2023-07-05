@@ -24,7 +24,7 @@ body{
     border: hidden;
     border-radius: 10px;
     cursor: pointer;
-    transition: 250ms;
+    transition: 250ms ease-in;
 }
 .button:hover{
     color: #fff;
