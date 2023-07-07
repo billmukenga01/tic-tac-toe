@@ -1,11 +1,7 @@
 
 //add event listeners
 const container = document.querySelector('.gameboard');
-container.addEventListener('click',(e) => {
-    if(! e.target.classList.contains('gameboard')){
-        console.log('bill')
-    }
-})
+
 //mark the 'box' where the event fired up.
 //check winning conditions
 //switch to next player
@@ -24,6 +20,12 @@ const GameBoard = (()=>{
             newDiv.classList = `box box-${i}`
             container.appendChild(newDiv);
         }
+
+        container.addEventListener('click',(e) => {
+            if(! e.target.classList.contains('gameboard')){
+                console.log('bill')
+            }
+        })
     }
 
     return{
