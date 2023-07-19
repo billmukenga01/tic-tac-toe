@@ -1,6 +1,7 @@
 
 //add event listeners
 const container = document.querySelector('.gameboard');
+const button = document.querySelector('.button');
 
 //mark the 'box' where the event fired up.
 //check winning conditions
@@ -19,6 +20,7 @@ const GameBoard = (()=>{
             // newDiv.setAttribute('class', 'box');
             newDiv.classList = `box box-${i}`
             container.appendChild(newDiv);
+            newDiv.textContent = 'Bill';
         }
 
         container.addEventListener('click',(e) => {
@@ -32,8 +34,6 @@ const GameBoard = (()=>{
         render
     }
 })();
-
-// GameBoard.render();
 
 
 
@@ -57,11 +57,27 @@ const GameController = (()=>{
         gameOver = false
         GameBoard.render();
     }
+    const restart = ()=>{
+        currentPlayerIndex = undefined;
+        gameOver = undefined;
+        players = undefined;
 
+        
+        const box = document.querySelectorAll('.box');
+        box.forEach(function(element){
+            element.textContent = "";
+        })
+    }
     return{
         start,
+        restart
         // restart
     }
 })();
+
+
+button.addEventListener('click', e =>{
+    GameController.restart();
+})
 
 GameController.start()
