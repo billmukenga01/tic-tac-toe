@@ -11,10 +11,10 @@ const container = document.querySelector('.gameboard');
 
 
 const GameBoard = (()=>{
-    const gameboard = 9;
+    const gameboard = ["", "","","","","","","",""];
 
     const render = ()=>{
-        for(i = 1; i<=gameboard; i++){
+        for(i = 1; i<=gameboard.length; i++){
             const newDiv = document.createElement('div');
             // newDiv.setAttribute('class', 'box');
             newDiv.classList = `box box-${i}`
