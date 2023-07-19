@@ -53,15 +53,15 @@ body{
     border: 1px solid black;
 }
 
-.one, .two, .three{
+.box-1, .box-2, .box-3{
     border-top: none;
 }
-.seven, .eight, .nine{
+.box-7, .box-8, .box-9{
     border-bottom: none;
 }
-.one, .four, .seven{
+.box-1, .box-4, .box-7{
     border-left: none;
 }
-.three, .six, .nine{
+.box-3, .box-6, .box-9{
     border-right: none;
 }
